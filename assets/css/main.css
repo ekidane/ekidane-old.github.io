@@ -1441,30 +1441,45 @@ input, select, textarea {
 
 	table {
 		width: 100%;
+		max-width: 50rem;
 		text-align: center;
 	}
-
-	td {
-		border: 0.5px solid gray;
-	}
-
-		/* table.default tbody tr {
-			border-bottom: solid 1px #f4f4f4;
-		} */
-
-		table.default td {
-			padding: 0.5em 1em 0.5em 1em;
+		
+		tr:nth-child(even) th {
+			color: #ccc;
+			font-weight: normal;
 		}
-
-		table.default th {
-			text-align: center;
-			font-weight: 400;
-			padding: 0.5em 1em 0.5em 1em;
+		
+		th,
+		td {
+			padding: 0.5rem 1rem;
 		}
-
-		/* table.default thead {
-			border-bottom: solid 2px #f4f4f4;
-		} */
+		
+		th {
+			font-weight: normal;
+			border-top: thin dotted #777777;
+			/* border-right: thin dotted #777777; */
+		}
+		
+		td {
+			font-size: 0.8rem;
+			font-weight: bold;
+			line-height: 1.4;
+			border-radius: 0.2rem;
+			transition: opacity 0.3s ease;
+		}
+		
+		td > span {
+			font-size: 0.8em;
+			font-weight: normal;
+			display: block;
+			width: 100%;
+		}
+		
+	.stage-dcs {background-color: #9CCC65}
+	.stage-dcs-oh {background-color: rgb(184, 226, 136)}
+	.stage-pd2 {background-color: #81D4FA}
+	.stage-pd2-oh {background-color: #B3E5FC}
 
 /* Form */
 
